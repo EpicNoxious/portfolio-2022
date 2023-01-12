@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Giselle";
+  src: url("FHGiselle-Bold.eot");
+  src: local("FH Giselle Bold"), local("Giselle-Bold"),
+    url("../font/FHGiselle-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../font/FHGiselle-Bold.woff2") format("woff2"),
+    url("../font/FHGiselle-Bold.woff") format("woff"),
+    url("../font/FHGiselle-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Giselle";
+  src: url("FHGiselle-Light.eot");
+  src: local("FH Giselle Light"), local("FHGiselle-Light"),
+    url("../font/FHGiselle-Light.eot?#iefix") format("embedded-opentype"),
+    url("../font/FHGiselle-Light.woff2") format("woff2"),
+    url("../font/FHGiselle-Light.woff") format("woff"),
+    url("../font/FHGiselle-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roxborough";
+  src: url("RoxboroughCF-Light.eot");
+  src: local("RoxboroughCF-Light"), local("RoxboroughCF-Light"),
+    url("../font/RoxboroughCF-Light.eot?#iefix") format("embedded-opentype"),
+    url("../font/RoxboroughCF-Light.woff2") format("woff2"),
+    url("../font/RoxboroughCF-Light.woff") format("woff"),
+    url("../font/RoxboroughCF-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roxborough-B";
+  src: local("RoxboroughCF-Bold"), local("RoxboroughCF-Bold"),
+    url("../font/RoxboroughCF-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../font/RoxboroughCF-Bold.woff2") format("woff2"),
+    url("../font/RoxboroughCF-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roxborough-BI";
+  src: local("RoxboroughCF-BoldItalic"), local("RoxboroughCF-BoldItalic"),
+    url("../font/RoxboroughCF-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../font/RoxboroughCF-BoldItalic.woff2") format("woff2"),
+    url("../font/RoxboroughCF-BoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Roxborough-EBI";
+  src: local("RoxboroughCF-ExtraBoldItalic"),
+    local("RoxboroughCF-ExtraBoldItalic"),
+    url("../font/RoxboroughCF-ExtraBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../font/RoxboroughCF-ExtraBoldItalic.woff2") format("woff2"),
+    url("../font/RoxboroughCF-ExtraBoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy-B";
+  src: local("Gilroy"), url("../font/Gilroy-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gilroy-EB";
+  src: local("Gilroy"), url("../font/Gilroy-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gilroy-L";
+  src: local("Gilroy"), url("../font/Gilroy-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gilroy-M";
+  src: local("Gilroy"), url("../font/Gilroy-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gilroy-R";
+  src: local("Gilroy"), url("../font/Gilroy-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gilroy-T";
+  src: local("Gilroy"), url("../font/Gilroy-Thin.ttf") format("truetype");
+}

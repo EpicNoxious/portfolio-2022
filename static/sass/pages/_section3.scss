@@ -1,0 +1,122 @@
+.philosophy {
+  margin-top: calc(12vw + 48px);
+  color: $text-grey;
+  text-transform: uppercase;
+
+  &__text {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+  }
+  &__quote {
+    width: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  &__decor {
+    // background-image: url("../img/9c8f7e7748.jfif");
+    background-color: var(--sec-accent);
+    border-radius: 10000px;
+  }
+  &__underlined {
+    position: relative;
+  }
+  &__underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(50%);
+    // background-color: yellow;
+  }
+}
+
+.skills,
+.tech {
+  &__help {
+    margin-top: calc(12vw + 48px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--text {
+      max-width: 50%;
+
+      &--header {
+        font-size: calc(0.4vw + 6px);
+        font-weight: 500;
+        letter-spacing: 0.1px;
+        color: $text-background-grey;
+        text-transform: uppercase;
+        text-align: left;
+      }
+      &--content {
+        font-size: calc(1vw + 6px);
+        font-weight: 500;
+        margin-top: calc(8px);
+        letter-spacing: 0.3px;
+        color: $text-grey;
+        text-transform: uppercase;
+        text-align: left;
+      }
+    }
+  }
+}
+.tech__help--text {
+  margin-left: 7%;
+}
+.skills__help--text--content {
+  margin-right: 7%;
+}
+
+.archive {
+  margin-top: calc(12vw + 48px);
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 2.4vw;
+    &--heading {
+      flex: 35%;
+      color: $text-grey;
+      text-transform: capitalize;
+      font-size: calc(3.8vw + 12px);
+      font-family: "Giselle", sans-serif;
+      font-weight: 1000;
+      letter-spacing: 1px;
+      text-align: right;
+    }
+    &--design {
+      position: relative;
+      height: 100%;
+      min-height: 8vw;
+      flex: 60%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      background-color: var(--sec-accent);
+      border-radius: 10000px;
+      overflow: hidden;
+      order: -1;
+    }
+  }
+
+  &__content {
+    margin-top: calc(4vw + 48px);
+    font-size: calc(0.6vw + 12px);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    &--para {
+      color: $text-background-grey;
+      text-align: left;
+      &:not(:last-child) {
+        margin-bottom: calc(0.4vw + 12px);
+      }
+    }
+  }
+}

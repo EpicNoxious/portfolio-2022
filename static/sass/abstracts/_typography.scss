@@ -1,0 +1,22 @@
+h1 {
+  font-size: calc(11.2vw + 12px);
+  font-weight: 100;
+  font-family: "Giselle", sans-serif;
+  @include mini {
+    font-size: calc(16vw + 12px);
+  }
+}
+
+h2 {
+  font-size: calc(1.6vw + 12px);
+  color: $text-grey;
+  font-family: "Gilroy-M", sans-serif;
+  letter-spacing: 0.5px;
+}
+h3 {
+  font-size: calc(2.4vw + 12px);
+  color: $text-grey;
+  font-weight: 1000;
+  font-family: "Giselle", sans-serif;
+  letter-spacing: 1px;
+}

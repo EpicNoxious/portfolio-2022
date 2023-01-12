@@ -1,0 +1,191 @@
+body {
+  display: flex;
+  position: relative;
+
+  /* SECTION STYLING FROM HERE */
+  section {
+    position: fixed;
+    min-height: 0vh;
+    cursor: pointer;
+    width: 10vw;
+    top: 0;
+    text-align: center;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-150%);
+    animation: show 2s forwards;
+    transition: all 1000ms ease-in-out;
+    @include mini {
+      display: none;
+      width: 100vw !important;
+    }
+
+    .section-container {
+      position: relative;
+      left: 0vw;
+      opacity: 0;
+      pointer-events: none;
+      width: 0;
+      height: 0;
+      // @include mini {
+      //   left: 0;
+      //   margin: 0 auto;
+      //   width: 100%;
+      //   top: 0;
+      // }
+    }
+  }
+
+  /* FIRST SECTION */
+  #first {
+    left: 0;
+    // animation-delay: 0;
+    background: $section-1;
+  }
+
+  /* SECOND SECTION */
+  #second {
+    left: 80vw;
+    background: $section-2;
+    @include mini {
+      left: 0vw;
+    }
+  }
+
+  /* THIRD SECTION */
+  #third {
+    left: 90vw;
+    background: $section-3;
+    @include mini {
+      left: 0vw;
+    }
+  }
+
+  section.focused {
+    position: relative;
+    min-height: 100vh;
+    width: 80vw;
+    cursor: auto;
+    opacity: 1;
+    transform: translateY(0);
+    @include mini {
+      width: 100vw !important;
+      display: block;
+      padding: 0 5vw;
+    }
+
+    .section-container {
+      opacity: 1;
+      pointer-events: all;
+      height: fit-content;
+      transition: opacity 1000ms 500ms ease;
+      width: 90%;
+      @include mini {
+        width: 100%;
+      }
+    }
+
+    & .section-container .hero .heading .overflow .hero__heading {
+      transform: translateY(0);
+      transition: transform 500ms ease 1000ms;
+    }
+  }
+
+  // WHEN FIRST SECTION IS FOCUSED
+  #first.second-clicked {
+    left: 0vw;
+  }
+  #first.third-clicked {
+    left: 0vw;
+  }
+
+  // WHEN SECOND SECTION IS FOCUSED
+  #second.second-clicked {
+    left: 10vw;
+    @include mini {
+      left: 0vw;
+    }
+  }
+  #second.third-clicked {
+    left: 10vw;
+    @include mini {
+      left: 0vw;
+    }
+  }
+
+  // WHEN THIRD SECTION IS FOCUSED
+  #third.second-clicked {
+    left: 90vw;
+    @include mini {
+      left: 0vw;
+    }
+  }
+  #third.third-clicked {
+    left: 20vw;
+    @include mini {
+      left: 0vw;
+    }
+  }
+}
+
+// MOBILE SECTION
+#second .section-container,
+#third .section-container {
+  @include mini {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+    min-height: 100vh;
+    transform: translateY(0);
+  }
+}
+
+.focused.sec1 ~ .portfolio {
+  left: 5vw;
+  @include mini {
+    left: 5vw;
+  }
+}
+
+.focused.sec2 ~ .portfolio {
+  left: 15vw;
+  @include mini {
+    left: 5vw;
+  }
+}
+
+.focused.sec3 ~ .portfolio {
+  left: 25vw;
+  @include mini {
+    left: 5vw;
+  }
+}
+
+.slide-up {
+  animation: slide-up 1000ms cubic-bezier(0.65, 0, 0.35, 1) both 1s;
+}
+
+.slide-in:nth-child(1) {
+  transform: translate(0%, 70%) rotate(-15deg) !important;
+}
+.slide-in:nth-child(2) {
+  transform: translate(0%, 55%) rotate(-12deg) !important;
+}
+.slide-in:nth-child(3) {
+  transform: translate(0%, 40%) rotate(-9deg) !important;
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(20vw);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

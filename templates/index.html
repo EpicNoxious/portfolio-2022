@@ -1,14 +1,920 @@
 <!DOCTYPE html>
+<!-- {% load static %} -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'styles.css'%}" />
+    <title>Jappreet Singh &mdash; Developer</title>
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link
+      rel="preload"
+      href="FHGiselle-Light.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="Roxoborough-Light.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <script src="https://unpkg.com/phosphor-icons"></script>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div class="fancyintro">
+      <div class="fancyintro-text">
+        <p class="hide">
+          <span class="text">Jappreet Singh</span>
+        </p>
+        <p class="hide">
+          <span class="text"
+            >Portfolio <strong class="change-color">&lt;/&gt;</strong></span
+          >
+        </p>
+      </div>
+    </div>
+    <div class="slider"></div>
+    <div id="trailer">
+      <i id="trailer-icon" class="ph-arrow-up-right-bold"></i>
+    </div>
+    <div class="mini-sections">
+      <div id="section-one" style="--order: 1" class="mini-section">
+        <span>Display</span>
+      </div>
+      <div id="section-two" style="--order: 2" class="mini-section">
+        <span>Projects</span>
+      </div>
+      <div id="section-three" style="--order: 3" class="mini-section">
+        <span>Resources</span>
+      </div>
+    </div>
+    <div class="burger">
+      <div class="line1 toggle-burger"></div>
+      <div class="line2 toggle-burger"></div>
+    </div>
+    <!-- SECTION 1 -->
+    <section class="focused sec1" id="first">
+      <span class="section-name remove-span">Display</span>
+      <div class="first-container section-container">
+        <div class="hero">
+          <div class="time">
+            <div class="timeoverflow">
+              <span class="timetext slide-up">My local time</span> &nbsp;
+              <span class="js-time slide-up">11:46</span>
+            </div>
+            <div class="timeoverflow">
+              <span class="timezone slide-up">GMT (+5:30)</span>
+            </div>
+          </div>
+          <div class="collaborate">
+            <div class="collaborateoverflow">
+              <span class="collaboratetext slide-up"
+                >Currently available <span class="helper-color">for</span>
+              </span>
+              &nbsp;
+            </div>
+            <div class="collaborateoverflow">
+              <span class="collaboratetext slide-up"
+                >project collaborations</span
+              >
+            </div>
+          </div>
+          <h1 class="heading">
+            <div class="overflow">
+              <span class="hero__heading">Creative</span>
+            </div>
+            <div class="overflow">
+              <span class="hero__heading--curious helper-color">Curious</span>
+              <span class="hero__heading">Developer</span>
+            </div>
+          </h1>
+          <div class="downarrow">
+            <i class="ph-arrow-bend-right-down-bold arrow"></i>
+          </div>
+        </div>
+        <div class="intro">
+          <!-- <h2 class="intro__text">
+            I'm Jappreet Singh,<br />I build
+            <span class="intro__text--keyword">unconventional </span>yet
+            functional & visually pleasing interfaces for the mobile and web.
+          </h2> -->
+          <div class="intro__header">
+            <h2 class="intro__header--heading">
+              Who am I ?<br />
+              What I do .
+            </h2>
+            <div class="intro__header--design">
+              <object
+                data="../static/img/wave1.1.svg"
+                style="height: 100%"
+              ></object>
+              <div class="blind"></div>
+            </div>
+          </div>
+          <div class="intro__text">
+            <p class="intro__text--1">
+              I'm <span class="intro__text--keyword">Jappreet Singh</span
+              ><br />I build unconventional yet functional & visually pleasing
+              interfaces for the mobile and web.
+            </p>
+            <p class="intro__text--2">
+              An ex-Ryanite who is currently pursuing B Tech. in Computer
+              Science Engineering from Chandigarh University, Punjab.
+            </p>
+            <p class="intro__text--3">
+              Addicted to different combinations of Typography, Colors, Fonts,
+              Compositions, Illustrations & Motions.
+            </p>
+          </div>
+          <div class="intro__list">
+            <ul class="intro__tags">
+              <li class="intro__tag">Eat</li>
+              <li class="intro__tag intro__dot">
+                <i class="ph-circle-fill"></i>
+              </li>
+              <li class="intro__tag">Code</li>
+              <li class="intro__tag intro__dot">
+                <i class="ph-circle-fill"></i>
+              </li>
+              <li class="intro__tag">Sleep</li>
+              <li class="intro__tag intro__dot">
+                <i class="ph-circle-fill"></i>
+              </li>
+              <li class="intro__tag">Repeat</li>
+              <li class="intro__tag intro__dot">
+                <i class="ph-circle-fill"></i>
+              </li>
+              <li class="intro__tag">Eat</li>
+              <li class="intro__tag intro__dot">
+                <i class="ph-circle-fill"></i>
+              </li>
+              <li class="intro__tag">Code</li>
+              <li class="intro__tag intro__dot">
+                <i class="ph-circle-fill"></i>
+              </li>
+              <li class="intro__tag">Sleep</li>
+              <li class="intro__tag intro__dot">
+                <i class="ph-circle-fill"></i>
+              </li>
+              <li class="intro__tag">Repeat</li>
+              <li class="intro__tag intro__dot">
+                <i class="ph-circle-fill"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="about">
+          <div class="about__header">
+            <h2 class="about__header--heading">A word about me . .</h2>
+            <div class="about__header--design">
+              <object
+                data="../static/img/wave1.2.svg"
+                style="height: 100%"
+              ></object>
+              <div class="blind"></div>
+            </div>
+          </div>
+          <div class="about__content">
+            <p class="about__content--para">
+              I'm a web developer working out of New Delhi, India, and I'm
+              constantly looking for ground-breaking solutions to issues that
+              arise in daily life. In my work, I spend most of my time coming up
+              with innovative solutions to development problems.
+            </p>
+            <p class="about__content--para">
+              I've been a part of this industry for over an year and within this
+              period, I've honed my creative ability, technical and
+              collaboration skills which makes working with a team easier. I've
+              also had the opportunity to serve as lead web developer for
+              different projects.
+            </p>
+            <p class="about__content--para">
+              For me, each project I have the privilege to work on is a new
+              opportunity to learn new things, meet people with ideas that
+              differ from mine, and discover things about myself I never knew
+              were beneath the layers of all of me.
+            </p>
+            <p class="about__content--para">
+              I enjoy browsing web designs, it helps me foster new innovative
+              ideas. I listen to lots of music in Phonk and Lo-fi genre. I spend
+              most of my free time with my family and playing games with my
+              buddies.
+            </p>
+            <p class="about__content--para">
+              I'm surprised you actually read all of that, well thanks for your
+              patience. I'm available for full-time roles and freelance projects
+              worldwide. As long as you don't mind watching me work from screens
+              away :)
+            </p>
+          </div>
+
+          <div class="about__help">
+            <div class="decor">
+              <i class="ph-caret-double-down-bold cloud"></i>
+            </div>
+            <div class="about__help--text">
+              <div class="about__help--text--header">
+                Things I <span class="helper-color">can</span> help you with.
+              </div>
+              <div class="about__help--text--content">
+                RESPONSIVENESS / UI&UX / BRANDING / FRONT-END DEVELOPMENT /
+                DJANGO / FLASK
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footer__header">
+            Interested in finding more ?
+            <div class="footer__header--btn interactable" data-type="link">
+              <span>Let's talk</span>
+              <i class="ph-arrow-down-right-bold"></i>
+            </div>
+          </div>
+
+          <div class="footer__design">
+            <object
+              data="../static/img/wave1.3.svg"
+              style="height: 100%"
+            ></object>
+          </div>
+        </div>
+        <div class="end">
+          <div class="end__content--left">
+            <div class="end__content--left--header">Keep In Touch .</div>
+            <div class="end__content--left--content">
+              Thanks for visiting the site. Hope you liked it, if you have any
+              suggestions, feel free to inform me. Your valueable suggestions
+              will be much appreciated.
+            </div>
+          </div>
+          <div class="end__content--right">
+            <ul class="end__content--right--list">
+              <li
+                class="end__content--right--listitem interactable"
+                data-type="link"
+              >
+                <span> Instagram <i class="ph-arrow-down-right-bold"></i></span>
+              </li>
+              <li
+                class="end__content--right--listitem interactable"
+                data-type="link"
+              >
+                <span> Linkedin <i class="ph-arrow-down-right-bold"></i></span>
+              </li>
+              <li
+                class="end__content--right--listitem interactable"
+                data-type="link"
+              >
+                <span> Facebook <i class="ph-arrow-down-right-bold"></i></span>
+              </li>
+              <li
+                class="end__content--right--listitem interactable"
+                data-type="link"
+              >
+                <span> Github <i class="ph-arrow-down-right-bold"></i></span>
+              </li>
+              <li
+                class="end__content--right--listitem interactable"
+                data-type="link"
+              >
+                <span> Twitter <i class="ph-arrow-down-right-bold"></i></span>
+              </li>
+              <li
+                class="end__content--right--listitem interactable"
+                data-type="link"
+              >
+                <span> Resume <i class="ph-arrow-down-right-bold"></i></span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Copyright -->
+        </div>
+        <div class="copyright">
+          &copy; 2023 Jappreet Singh, All Rights Reserved &middot;
+          <input class="credits" type="checkbox" id="toggle-1" />
+
+          <span class="copyright__credits">
+            <label for="toggle-1" class="interactable" data-type="link"
+              >Credits</label
+            >
+          </span>
+          <div class="copyright__info">
+            <div class="copyright__content" style="--order: 1">
+              <div class="copyright__content--header">Technologies</div>
+              <div class="copyright__content--content">
+                <ul>
+                  <li>
+                    <a href="#" class="interactable" data-type="link"
+                      >django,</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="interactable" data-type="link">html,</a>
+                  </li>
+                  <li>
+                    <a href="#" class="interactable" data-type="link">scss,</a>
+                  </li>
+                  <li>
+                    <a href="#" class="interactable" data-type="link">js</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="copyright__content" style="--order: 2">
+              <div class="copyright__content--header">Fonts</div>
+              <div class="copyright__content--content">
+                <ul class="fonts">
+                  <li>
+                    <a href="#" class="interactable" data-type="link"
+                      >Roxoborough,</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="interactable" data-type="link"
+                      >Giselle,</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="interactable" data-type="link">Gilroy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="copyright__content" style="--order: 3">
+              <div class="copyright__content--header">
+                Designed and developed by
+              </div>
+              <div class="copyright__content--content">
+                <ul>
+                  <li>
+                    <a href="#" class="interactable" data-type="link"
+                      >Jappreet Singh</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <label class="close interactable" data-type="link" for="toggle-1"
+              ><i class="ph-x-bold"></i
+            ></label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION 2 -->
+    <section class="sec2" id="second">
+      <span class="section-name">Projects</span>
+      <div class="second-container section-container">
+        <div class="hero">
+          <div class="time">
+            <div class="timeoverflow">
+              <span class="timetext slide-up">My local time</span> &nbsp;
+              <span class="js-time slide-up">11:46</span>
+            </div>
+            <div class="timeoverflow">
+              <span class="timezone slide-up">GMT (+5:30)</span>
+            </div>
+          </div>
+          <div class="collaborate">
+            <div class="collaborateoverflow">
+              <span class="collaboratetext slide-up"
+                >Currently available <span class="helper-color">for</span>
+              </span>
+              &nbsp;
+            </div>
+            <div class="collaborateoverflow">
+              <span class="collaboratetext slide-up"
+                >project collaborations</span
+              >
+            </div>
+          </div>
+          <h1 class="heading">
+            <div class="overflow">
+              <span class="hero__heading">Speaking</span>
+            </div>
+            <div class="overflow">
+              <span class="hero__heading--curious helper-color">About</span>
+              <span class="hero__heading">Projects</span>
+            </div>
+          </h1>
+          <div class="downarrow">
+            <i class="ph-arrow-bend-right-down-bold arrow"></i>
+          </div>
+        </div>
+        <div class="projects">
+          <div class="projects__header">
+            <h2 class="projects__header--heading">
+              My <br />
+              projects . .
+            </h2>
+            <div class="projects__header--design">
+              <object
+                data="../static/img/wave2.1.svg"
+                style="height: 100%"
+              ></object>
+              <div class="blind"></div>
+            </div>
+          </div>
+          <div class="projects__content">
+            <!-- 1st Project -->
+            <div class="project__tags">
+              <ul class="project__tags--list">
+                <li class="project__tags--listitem">Flask</li>
+                <li class="project__tags--listitem">SCSS</li>
+                <li class="project__tags--listitem">JavaScript</li>
+                <li class="project__tags--listitem">Figma</li>
+              </ul>
+              <div class="project__copyright">№ &mdash; /001</div>
+            </div>
+            <a class="project__link interactable" href="#" data-type="link">
+              <div class="project project--1">
+                <div class="project__header">Brew Nation</div>
+              </div>
+            </a>
+
+            <!-- 2nd Project -->
+            <div class="project__tags">
+              <ul class="project__tags--list">
+                <li class="project__tags--listitem">Flask</li>
+                <li class="project__tags--listitem">JavaScript</li>
+              </ul>
+              <div class="project__copyright">№ &mdash; /002</div>
+            </div>
+            <a class="project__link interactable" href="#" data-type="link">
+              <div class="project project--2">
+                <div class="project__header">Blog Web-App</div>
+              </div>
+            </a>
+
+            <!-- 3rd Project -->
+            <div class="project__tags">
+              <ul class="project__tags--list">
+                <li class="project__tags--listitem">Django</li>
+                <li class="project__tags--listitem">JavaScript</li>
+                <li class="project__tags--listitem">SCSS</li>
+                <li class="project__tags--listitem">Figma</li>
+              </ul>
+              <div class="project__copyright">№ &mdash; /003</div>
+            </div>
+            <a class="project__link interactable" href="#" data-type="link">
+              <div class="project project--3">
+                <div class="project__header">Devsearch</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footer__header">
+            Interested in finding more ?
+            <div class="footer__header--btn interactable" data-type="link">
+              <span>Let's talk</span>
+              <i class="ph-arrow-down-right-bold"></i>
+            </div>
+          </div>
+          <div class="footer__design">
+            <object
+              data="../static/img/wave2.4.svg"
+              style="height: 100%"
+            ></object>
+          </div>
+        </div>
+        <div class="end">
+          <div class="end__content--left">
+            <div class="end__content--left--header">Keep In Touch .</div>
+            <div class="end__content--left--content">
+              Thanks for visiting the site. Hope you liked it, if you have any
+              suggestions, feel free to inform me. Your valueable suggestions
+              will be much appreciated.
+            </div>
+          </div>
+          <div class="end__content--right">
+            <ul class="end__content--right--list">
+              <li
+                class="end__content--right--listitem interactable"
+                data-type="link"
+              >
+                <span> Instagram <i class="ph-arrow-down-right-bold"></i></span>
+              </li>
+              <li
+                class="end__content--right--listitem interactable"
+                data-type="link"
+              >
+                <span> Linkedin <i class="ph-arrow-down-right-bold"></i></span>
+              </li>
+              <li
+                class="end__content--right--listitem interactable"
+                data-type="link"
+              >
+                <span> Facebook <i class="ph-arrow-down-right-bold"></i></span>
+              </li>
+              <li
+                class="end__content--right--listitem interactable"
+                data-type="link"
+              >
+                <span> Github <i class="ph-arrow-down-right-bold"></i></span>
+              </li>
+              <li
+                class="end__content--right--listitem interactable"
+                data-type="link"
+              >
+                <span> Twitter <i class="ph-arrow-down-right-bold"></i></span>
+              </li>
+              <li
+                class="end__content--right--listitem interactable"
+                data-type="link"
+              >
+                <span> Resume <i class="ph-arrow-down-right-bold"></i></span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Copyright -->
+        </div>
+        <div class="copyright">
+          &copy; 2023 Jappreet Singh, All Rights Reserved &middot;
+          <input class="credits" type="checkbox" id="toggle-2" />
+
+          <span class="copyright__credits">
+            <label for="toggle-2" class="interactable" data-type="link"
+              >Credits</label
+            >
+          </span>
+          <div class="copyright__info">
+            <div class="copyright__content" style="--order: 1">
+              <div class="copyright__content--header">Technologies</div>
+              <div class="copyright__content--content">
+                <ul>
+                  <li>
+                    <a href="#" class="interactable" data-type="link">html,</a>
+                  </li>
+                  <li>
+                    <a href="#" class="interactable" data-type="link">scss,</a>
+                  </li>
+                  <li>
+                    <a href="#" class="interactable" data-type="link">js,</a>
+                  </li>
+                  <li>
+                    <a href="#" class="interactable" data-type="link">django</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="copyright__content" style="--order: 2">
+              <div class="copyright__content--header">Fonts</div>
+              <div class="copyright__content--content">
+                <ul class="fonts">
+                  <li>
+                    <a href="#" class="interactable" data-type="link"
+                      >Giselle,</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="interactable" data-type="link"
+                      >Roxoborough,</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="interactable" data-type="link">Gilroy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="copyright__content" style="--order: 3">
+              <div class="copyright__content--header">
+                Designed and developed by
+              </div>
+              <div class="copyright__content--content">
+                <ul>
+                  <li>
+                    <a href="#" class="interactable" data-type="link"
+                      >Jappreet Singh</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <label class="close interactable" data-type="link" for="toggle-2"
+              ><i class="ph-x-bold"></i
+            ></label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION 3 -->
+    <section class="sec3" id="third">
+      <span class="section-name">Resources</span>
+
+      <div class="third-container section-container">
+        <div class="hero">
+          <div class="time">
+            <div class="timeoverflow">
+              <span class="timetext slide-up">My local time</span> &nbsp;
+              <span class="js-time slide-up">11:46</span>
+            </div>
+            <div class="timeoverflow">
+              <span class="timezone slide-up">GMT (+5:30)</span>
+            </div>
+          </div>
+          <div class="collaborate">
+            <div class="collaborateoverflow">
+              <span class="collaboratetext slide-up"
+                >Currently available <span class="helper-color">for</span>
+              </span>
+              &nbsp;
+            </div>
+            <div class="collaborateoverflow">
+              <span class="collaboratetext slide-up"
+                >project collaborations</span
+              >
+            </div>
+          </div>
+          <h1 class="heading">
+            <div class="overflow">
+              <span class="hero__heading">Descend</span>
+            </div>
+            <div class="overflow">
+              <span class="hero__heading--curious helper-color">into</span>
+              <span class="hero__heading">Resources</span>
+            </div>
+          </h1>
+          <div class="downarrow">
+            <i class="ph-arrow-bend-right-down-bold arrow"></i>
+          </div>
+        </div>
+        <div class="philosophy">
+          <h3 class="philosophy__text">
+            <svg class="philosophy__quote" viewBox="0 0 78 76" fill="none">
+              <path
+                fill="var(--sec-accent)"
+                d="M16.9 42.47c5.3 0 9.48 1.53 12.54 4.58 3.21 2.9 4.82 6.84 4.82 11.83 0 4.82-1.6 8.76-4.82 11.82-3.06 2.9-7.24 4.34-12.55 4.34-5.15 0-9.25-1.45-12.3-4.34C1.52 67.8 0 63.94 0 59.12v-1.93C.32 50.27 6.35 31.2 18.1 0h15.92v1.45L8.2 43.19l1.21.48v.25c2.1-.97 4.58-1.45 7.48-1.45zM61.04 0H77.2v1.45L51.4 43.19l.96.48v.25a18.8 18.8 0 017.48-1.45c5.3 0 9.5 1.53 12.55 4.58 3.22 2.9 4.82 6.84 4.82 11.83 0 4.82-1.6 8.76-4.82 11.82-3.06 2.9-7.24 4.34-12.55 4.34-5.15 0-9.25-1.45-12.3-4.34-2.9-2.9-4.35-6.76-4.35-11.58v-1.93C43.51 50.27 49.47 31.2 61.05 0z"
+              ></path>
+            </svg>
+            a creative mind knows how to do the right thing at the right place
+            and at the right
+            <span class="philosophy__underlined"
+              >time
+              <svg
+                class="philosophy__underline"
+                width="870"
+                height="146"
+                viewBox="0 0 870 146"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M869 2L1 85.4433H658L183.5 144"
+                  stroke="#FF970E"
+                  stroke-width="30"
+                />
+              </svg>
+            </span>
+          </h3>
+        </div>
+
+        <div class="skills">
+          <div class="skills__help">
+            <div class="decor">
+              <i class="ph-arrow-fat-right-bold right"></i>
+            </div>
+            <div class="skills__help--text">
+              <div class="skills__help--text--header">
+                Talking about<span class="helper-color">&nbsp; my &nbsp;</span
+                >skills
+              </div>
+              <div class="skills__help--text--content">
+                frontend / backend / UI&UX / logo designing / mongodb / postgres
+                / django / flask
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tech">
+          <div class="tech__help">
+            <div class="tech__help--text">
+              <div class="tech__help--text--header">
+                Technologies I<span class="helper-color">&nbsp; use</span>
+              </div>
+              <div class="tech__help--text--content">
+                html / css, scss / javascript / python / vercel, heroku, netlify
+                / figma / git
+              </div>
+            </div>
+            <div class="decor-right">
+              <i class="ph-arrow-fat-left-bold left"></i>
+            </div>
+          </div>
+        </div>
+        <div class="archive">
+          <div class="archive__header">
+            <h2 class="archive__header--heading">
+              Figma<br />
+              Artworks . .
+            </h2>
+            <div class="archive__header--design">
+              <object
+                data="../static/img/wave3.1.svg"
+                style="height: 100%"
+              ></object>
+              <div class="blind"></div>
+            </div>
+          </div>
+          <div class="archive__content">
+            <p class="archive__content--para">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Praesentium voluptates fugit aliquam iusto laudantium saepe a
+              animi iste. Consectetur saepe quidem expedita distinctio esse.
+              Quidem quasi at modi laboriosam fugiat.
+            </p>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footer__header">
+            Interested in finding more ?
+            <div class="footer__header--btn interactable" data-type="link">
+              <span>Let's talk</span>
+              <i class="ph-arrow-down-right-bold"></i>
+            </div>
+          </div>
+          <div class="footer__design">
+            <object
+              data="../static/img/wave3.3.svg"
+              style="height: 100%"
+            ></object>
+          </div>
+        </div>
+        <div class="end">
+          <div class="end__content--left">
+            <div class="end__content--left--header">Keep In Touch .</div>
+            <div class="end__content--left--content">
+              Thanks for visiting the site. Hope you liked it, if you have any
+              suggestions, feel free to inform me. Your valueable suggestions
+              will be much appreciated.
+            </div>
+          </div>
+          <div class="end__content--right">
+            <ul class="end__content--right--list">
+              <li
+                class="end__content--right--listitem interactable"
+                data-type="link"
+              >
+                <span> Instagram <i class="ph-arrow-down-right-bold"></i></span>
+              </li>
+              <li
+                class="end__content--right--listitem interactable"
+                data-type="link"
+              >
+                <span> Linkedin <i class="ph-arrow-down-right-bold"></i></span>
+              </li>
+              <li
+                class="end__content--right--listitem interactable"
+                data-type="link"
+              >
+                <span> Facebook <i class="ph-arrow-down-right-bold"></i></span>
+              </li>
+              <li
+                class="end__content--right--listitem interactable"
+                data-type="link"
+              >
+                <span> Github <i class="ph-arrow-down-right-bold"></i></span>
+              </li>
+              <li
+                class="end__content--right--listitem interactable"
+                data-type="link"
+              >
+                <span> Twitter <i class="ph-arrow-down-right-bold"></i></span>
+              </li>
+              <li
+                class="end__content--right--listitem interactable"
+                data-type="link"
+              >
+                <span> Resume <i class="ph-arrow-down-right-bold"></i></span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Copyright -->
+        </div>
+        <div class="copyright">
+          &copy; 2023 Jappreet Singh, All Rights Reserved &middot;
+          <input class="credits" type="checkbox" id="toggle-3" />
+
+          <span class="copyright__credits">
+            <label for="toggle-3" class="interactable" data-type="link"
+              >Credits</label
+            >
+          </span>
+          <div class="copyright__info">
+            <div class="copyright__content" style="--order: 1">
+              <div class="copyright__content--header">Technologies</div>
+              <div class="copyright__content--content">
+                <ul>
+                  <li>
+                    <a href="#" class="interactable" data-type="link">html,</a>
+                  </li>
+                  <li>
+                    <a href="#" class="interactable" data-type="link">scss,</a>
+                  </li>
+                  <li>
+                    <a href="#" class="interactable" data-type="link">js,</a>
+                  </li>
+                  <li>
+                    <a href="#" class="interactable" data-type="link">django</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="copyright__content" style="--order: 2">
+              <div class="copyright__content--header">Fonts</div>
+              <div class="copyright__content--content">
+                <ul class="fonts">
+                  <li>
+                    <a href="#" class="interactable" data-type="link"
+                      >Giselle,</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="interactable" data-type="link"
+                      >Roxoborough,</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="interactable" data-type="link">Gilroy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="copyright__content" style="--order: 3">
+              <div class="copyright__content--header">
+                Designed and developed by
+              </div>
+              <div class="copyright__content--content">
+                <ul>
+                  <li>
+                    <a href="#" class="interactable" data-type="link"
+                      >Jappreet Singh</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <label class="close interactable" data-type="link" for="toggle-3"
+              ><i class="ph-x-bold"></i
+            ></label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="portfolio interactable" data-type="link">
+      <span class="portfolio__name">Jappreet S. </span>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+      integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script type="module" src="../static/js/app.js"></script>
+    <script>
+      function addZero(i) {
+        if (i < 10) {
+          i = "0" + i;
+        }
+        return i;
+      }
+
+      function calcTime(offset) {
+        let d = new Date();
+        let utc = d.getTime() + d.getTimezoneOffset() * 60000;
+        let nd = new Date(utc + 3600000 * offset);
+        return nd.getHours() + ":" + addZero(nd.getMinutes());
+      }
+
+      (() => {
+        document.querySelectorAll(".js-year").forEach((elm) => {
+          elm.innerHTML = "©" + new Date().getFullYear();
+        });
+        document.querySelectorAll(".js-time")[0].innerHTML = calcTime(+5.5);
+        document.querySelectorAll(".js-time")[1].innerHTML = calcTime(+5.5);
+        document.querySelectorAll(".js-time")[2].innerHTML = calcTime(+5.5);
+      })();
+
+      setInterval(() => {
+        let time = document.querySelectorAll(".js-time");
+        for (let x of time) {
+          x.innerHTML = calcTime(+5.5);
+        }
+      }, 60000);
+    </script>
   </body>
 </html>

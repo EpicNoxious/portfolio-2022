@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  cursor: default;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background: $section-1;
+  font-family: "Gilroy-R", sans-serif;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  color: $text-grey;
+  background-color: var(--sec-accent);
+}
+
+.section-name {
+  position: absolute;
+  color: $text-grey;
+  font-weight: 100;
+  font-size: calc(3.2vw + 12px);
+  font-family: "Giselle";
+  pointer-events: all;
+  visibility: hidden;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  animation: visible 0s ease forwards;
+  // transition: all 500ms ease;
+
+  /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.remove-span {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  // transition: opacity 500ms ease;
+}
+
+@keyframes visible {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+.fancyintro {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: $black;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000000;
+  &-text {
+    color: $text-grey;
+    font-size: calc(3.2vw + 12px);
+    font-family: "Giselle", sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+  }
+}
+
+.hide {
+  background: $black;
+  overflow: hidden;
+  & span {
+    transform: translateY(100%);
+    display: flex;
+    justify-content: space-between;
+    .change-color {
+      animation: switch-color 1.8s 0.2s linear forwards;
+    }
+  }
+}
+
+.slider {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: $text-grey;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000000;
+  transform: translateY(100%);
+}
+
+@keyframes switch-color {
+  33% {
+    color: #0076d5;
+  }
+  66% {
+    color: #fc2100;
+  }
+  100% {
+    color: #ff970e;
+  }
+}
