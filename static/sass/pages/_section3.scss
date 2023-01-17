@@ -107,7 +107,7 @@
   }
 
   &__content {
-    margin-top: calc(4vw + 48px);
+    margin-top: calc(12vw + 48px);
     font-size: calc(0.6vw + 12px);
     font-weight: 400;
     letter-spacing: 0.5px;
@@ -116,6 +116,42 @@
       text-align: left;
       &:not(:last-child) {
         margin-bottom: calc(0.4vw + 12px);
+      }
+    }
+  }
+
+  .artworks {
+    .artwork {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: calc(12vw + 48px);
+      &--1 {
+        a {
+          order: 1;
+          position: relative;
+          z-index: -1;
+        }
+      }
+      &--2 {
+        a {
+          order: -1;
+          position: relative;
+          z-index: -1;
+        }
+      }
+      &--3 {
+        a {
+          order: 1;
+          position: relative;
+          z-index: -1;
+        }
+      }
+      &__content {
+        color: $text-grey;
+      }
+      a object {
+        width: 70%;
       }
     }
   }
