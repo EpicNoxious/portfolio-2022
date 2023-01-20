@@ -348,6 +348,62 @@ html::-webkit-scrollbar {
     visibility: visible;
   }
 }
+.fancyintro {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000000;
+}
+.fancyintro-text {
+  color: #efefef;
+  font-size: calc(3.2vw + 12px);
+  font-family: "Giselle", sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.hide {
+  background: #000;
+  overflow: hidden;
+}
+.hide span {
+  transform: translateY(100%);
+  display: flex;
+  justify-content: space-between;
+}
+.hide span .change-color {
+  animation: switch-color 1.8s 0.2s linear forwards;
+}
+
+.slider {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #efefef;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000000;
+  transform: translateY(100%);
+}
+
+@keyframes switch-color {
+  33% {
+    color: #0076d5;
+  }
+  66% {
+    color: #fc2100;
+  }
+  100% {
+    color: #ff970e;
+  }
+}
 #trailer {
   height: 20px;
   width: 20px;

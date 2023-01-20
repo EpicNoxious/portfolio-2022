@@ -62,59 +62,59 @@ html::-webkit-scrollbar {
   }
 }
 
-// .fancyintro {
-//   position: fixed;
-//   height: 100%;
-//   width: 100%;
-//   background-color: $black;
-//   top: 0;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   z-index: 10000000;
-//   &-text {
-//     color: $text-grey;
-//     font-size: calc(3.2vw + 12px);
-//     font-family: "Giselle", sans-serif;
-//     font-weight: 100;
-//     letter-spacing: 1px;
-//   }
-// }
+.fancyintro {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: $black;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000000;
+  &-text {
+    color: $text-grey;
+    font-size: calc(3.2vw + 12px);
+    font-family: "Giselle", sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+  }
+}
 
-// .hide {
-//   background: $black;
-//   overflow: hidden;
-//   & span {
-//     transform: translateY(100%);
-//     display: flex;
-//     justify-content: space-between;
-//     .change-color {
-//       animation: switch-color 1.8s 0.2s linear forwards;
-//     }
-//   }
-// }
+.hide {
+  background: $black;
+  overflow: hidden;
+  & span {
+    transform: translateY(100%);
+    display: flex;
+    justify-content: space-between;
+    .change-color {
+      animation: switch-color 1.8s 0.2s linear forwards;
+    }
+  }
+}
 
-// .slider {
-//   position: fixed;
-//   height: 100%;
-//   width: 100%;
-//   background-color: $text-grey;
-//   top: 0;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   z-index: 10000000;
-//   transform: translateY(100%);
-// }
+.slider {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: $text-grey;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000000;
+  transform: translateY(100%);
+}
 
-// @keyframes switch-color {
-//   33% {
-//     color: #0076d5;
-//   }
-//   66% {
-//     color: #fc2100;
-//   }
-//   100% {
-//     color: #ff970e;
-//   }
-// }
+@keyframes switch-color {
+  33% {
+    color: #0076d5;
+  }
+  66% {
+    color: #fc2100;
+  }
+  100% {
+    color: #ff970e;
+  }
+}

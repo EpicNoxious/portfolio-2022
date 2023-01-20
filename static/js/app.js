@@ -1,8 +1,8 @@
 // FANCY INTRO
-// const slide = gsap.timeline({ defaults: { ease: "power1.out" } });
-// slide.to(".text", { y: "0%", duration: 0.75, stagger: 0 });
-// slide.to(".slider", { y: "-100%", duration: 1.5 }, "+=1.5");
-// slide.to(".fancyintro", { y: "-100%", duration: 1 }, "-=0.85");
+const slide = gsap.timeline({ defaults: { ease: "power1.out" } });
+slide.to(".text", { y: "0%", duration: 0.75, stagger: 0 });
+slide.to(".slider", { y: "-100%", duration: 1.5 }, "+=1.5");
+slide.to(".fancyintro", { y: "-100%", duration: 1 }, "-=0.85");
 
 window.onbeforeunload = function () {
   document.documentElement.scrollTo({ top: 0 });
