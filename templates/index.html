@@ -9,39 +9,25 @@
 
     <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
     <link rel="stylesheet" href="../static/css/styles.css" />
-    <link
-      rel="preload"
-      href="FHGiselle-Light.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="Roxoborough-Light.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
 
     <script src="https://unpkg.com/phosphor-icons"></script>
   </head>
   <body>
-    <div class="fancyintro">
+    <!-- <div class="fancyintro">
       <div class="fancyintro-text">
         <p class="hide">
           <span class="text">Jappreet Singh</span>
         </p>
         <p class="hide">
-          <span class="text"
+          <span class="tex  t"
             >Portfolio <strong class="change-color">&lt;/&gt;</strong></span
           >
         </p>
       </div>
     </div>
-    <div class="slider"></div>
+    <div class="slider"></div> -->
     <div id="trailer">
-      <i id="trailer-icon" class="ph-arrow-up-right-bold"></i>
+      <!-- <i id="trailer-icon" class="ph-arrow-up-right-bold"></i> -->
     </div>
     <div class="mini-sections">
       <div id="section-one" style="--order: 1" class="mini-section">
@@ -62,7 +48,7 @@
     <section class="focused sec1" id="first">
       <span class="section-name remove-span">Display</span>
       <div class="first-container section-container">
-        <div class="hero">
+        <header class="hero">
           <div class="time">
             <div class="timeoverflow">
               <span class="timetext slide-up">My local time</span> &nbsp;
@@ -85,29 +71,62 @@
               >
             </div>
           </div>
+
           <h1 class="heading">
             <div class="overflow">
-              <span class="hero__heading">Creative</span>
+              <div class="hero__heading" style="--order: 1">
+                Cre<span class="helper-word">a</span>tive
+              </div>
             </div>
             <div class="overflow">
-              <span class="hero__heading--curious helper-color">Curious</span>
-              <span class="hero__heading">Developer</span>
+              <div
+                class="hero__heading hero__heading--curious"
+                style="--order: 2"
+              >
+                Cu<span class="helper-word">r</span>ious
+              </div>
+            </div>
+            <div class="overflow">
+              <div class="hero__heading" style="--order: 3">
+                St<span class="helper-word">a</span>ck Dev
+              </div>
             </div>
           </h1>
           <div class="downarrow">
-            <i class="ph-arrow-bend-right-down-bold arrow"></i>
+            <svg
+              class="o-ui-arrow left"
+              width="64"
+              height="64"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.10162 3.10156L62.9999 62.9999"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M63 1.00001L63 63L0.999989 63"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
           </div>
-        </div>
+        </header>
         <div class="intro">
           <!-- <h2 class="intro__text">
             I'm Jappreet Singh,<br />I build
             <span class="intro__text--keyword">unconventional </span>yet
             functional & visually pleasing interfaces for the mobile and web.
           </h2> -->
+
           <div class="intro__header">
             <h2 class="intro__header--heading">
-              Who am I ?<br />
-              What I do .
+              Who A<span class="helper-word" style="color: var(--sec-accent)"
+                >m</span
+              >
+              I?
             </h2>
             <div class="intro__header--design">
               <object
@@ -171,7 +190,11 @@
         </div>
         <div class="about">
           <div class="about__header">
-            <h2 class="about__header--heading">A word about me . .</h2>
+            <h2 class="about__header--heading">
+              about m<span class="helper-word" style="color: var(--sec-accent)"
+                >e</span
+              >
+            </h2>
             <div class="about__header--design">
               <object
                 data="../static/img/wave1.2.svg"
@@ -216,7 +239,25 @@
 
           <div class="about__help">
             <div class="decor">
-              <i class="ph-caret-double-down-bold cloud"></i>
+              <svg
+                class="o-ui-arrow"
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.10162 3.10156L62.9999 62.9999"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M63 1.00001L63 63L0.999989 63"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
             </div>
             <div class="about__help--text">
               <div class="about__help--text--header">
@@ -231,7 +272,7 @@
         </div>
         <div class="footer">
           <div class="footer__header">
-            Interested in finding more ?
+            Want to know more?
             <div class="footer__header--btn interactable" data-type="link">
               <span>Let's talk</span>
               <i class="ph-arrow-down-right-bold"></i>
@@ -247,7 +288,7 @@
         </div>
         <div class="end">
           <div class="end__content--left">
-            <div class="end__content--left--header">Keep In Touch .</div>
+            <div class="end__content--left--header">Keep In Touch</div>
             <div class="end__content--left--content">
               Thanks for visiting the site. Hope you liked it, if you have any
               suggestions, feel free to inform me. Your valueable suggestions
@@ -334,7 +375,7 @@
                 <ul class="fonts">
                   <li>
                     <a href="#" class="interactable" data-type="link"
-                      >Roxoborough,</a
+                      >Oggitalic,</a
                     >
                   </li>
                   <li>
@@ -399,22 +440,53 @@
           </div>
           <h1 class="heading">
             <div class="overflow">
-              <span class="hero__heading">Speaking</span>
+              <div class="hero__heading" style="--order: 1">
+                Let's T<span class="helper-word">a</span>lk
+              </div>
             </div>
             <div class="overflow">
-              <span class="hero__heading--curious helper-color">About</span>
-              <span class="hero__heading">Projects</span>
+              <div
+                class="hero__heading hero__heading--curious"
+                style="--order: 2"
+              >
+                Abo<span class="helper-word">u</span>t
+              </div>
+            </div>
+            <div class="overflow">
+              <div class="hero__heading" style="--order: 3">
+                Wo<span class="helper-word">r</span>k
+              </div>
             </div>
           </h1>
           <div class="downarrow">
-            <i class="ph-arrow-bend-right-down-bold arrow"></i>
+            <svg
+              class="o-ui-arrow left"
+              width="64"
+              height="64"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.10162 3.10156L62.9999 62.9999"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M63 1.00001L63 63L0.999989 63"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
           </div>
         </div>
         <div class="projects">
           <div class="projects__header">
             <h2 class="projects__header--heading">
-              My <br />
-              projects . .
+              M<span class="helper-word" style="color: var(--sec-accent)"
+                >y</span
+              >
+              Projects
             </h2>
             <div class="projects__header--design">
               <object
@@ -474,7 +546,7 @@
         </div>
         <div class="footer">
           <div class="footer__header">
-            Interested in finding more ?
+            Want to know more?
             <div class="footer__header--btn interactable" data-type="link">
               <span>Let's talk</span>
               <i class="ph-arrow-down-right-bold"></i>
@@ -482,14 +554,14 @@
           </div>
           <div class="footer__design">
             <object
-              data="../static/img/wave2.4.svg"
+              data="../static/img/wave2.2.svg"
               style="height: 100%"
             ></object>
           </div>
         </div>
         <div class="end">
           <div class="end__content--left">
-            <div class="end__content--left--header">Keep In Touch .</div>
+            <div class="end__content--left--header">Keep In Touch</div>
             <div class="end__content--left--content">
               Thanks for visiting the site. Hope you liked it, if you have any
               suggestions, feel free to inform me. Your valueable suggestions
@@ -554,16 +626,18 @@
               <div class="copyright__content--content">
                 <ul>
                   <li>
+                    <a href="#" class="interactable" data-type="link"
+                      >django,</a
+                    >
+                  </li>
+                  <li>
                     <a href="#" class="interactable" data-type="link">html,</a>
                   </li>
                   <li>
                     <a href="#" class="interactable" data-type="link">scss,</a>
                   </li>
                   <li>
-                    <a href="#" class="interactable" data-type="link">js,</a>
-                  </li>
-                  <li>
-                    <a href="#" class="interactable" data-type="link">django</a>
+                    <a href="#" class="interactable" data-type="link">js</a>
                   </li>
                 </ul>
               </div>
@@ -574,12 +648,12 @@
                 <ul class="fonts">
                   <li>
                     <a href="#" class="interactable" data-type="link"
-                      >Giselle,</a
+                      >Oggitalic,</a
                     >
                   </li>
                   <li>
                     <a href="#" class="interactable" data-type="link"
-                      >Roxoborough,</a
+                      >Giselle,</a
                     >
                   </li>
                   <li>
@@ -640,15 +714,104 @@
           </div>
           <h1 class="heading">
             <div class="overflow">
-              <span class="hero__heading">Descend</span>
+              <div class="hero__heading" style="--order: 1">
+                Desce<span class="helper-word">n</span>d
+              </div>
             </div>
             <div class="overflow">
-              <span class="hero__heading--curious helper-color">into</span>
-              <span class="hero__heading">Resources</span>
+              <div
+                class="hero__heading hero__heading--curious"
+                style="--order: 2"
+              >
+                In<span class="helper-word">t</span>o
+              </div>
+            </div>
+            <div class="overflow">
+              <div class="hero__heading" style="--order: 3">
+                Resou<span class="helper-word">r</span>ces
+              </div>
             </div>
           </h1>
           <div class="downarrow">
-            <i class="ph-arrow-bend-right-down-bold arrow"></i>
+            <svg
+              class="o-ui-arrow left"
+              width="64"
+              height="64"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.10162 3.10156L62.9999 62.9999"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M63 1.00001L63 63L0.999989 63"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="archive">
+          <div class="archive__header">
+            <h2 class="archive__header--heading">
+              Figma P<span class="helper-word" style="color: var(--sec-accent)"
+                >e</span
+              >n
+            </h2>
+            <div class="archive__header--design">
+              <object
+                data="../static/img/wave3.1.svg"
+                style="height: 100%"
+              ></object>
+              <div class="blind"></div>
+            </div>
+          </div>
+          <div class="archive__content">
+            <div class="artworks">
+              <div class="artwork artwork--1">
+                <span>
+                  <a href="#">
+                    <object
+                      data="../static/img/WASS.svg"
+                      style="height: 100%"
+                    ></object>
+                  </a>
+                </span>
+                <div class="artwork__content">
+                  Lorem ipsum doquuntur aliquid autem deleniti hic est.
+                </div>
+              </div>
+              <div class="artwork artwork--2">
+                <span>
+                  <a href="">
+                    <object
+                      data="../static/img/BMW.svg"
+                      style="height: 100%"
+                    ></object>
+                  </a>
+                </span>
+                <div class="artwork__content">
+                  Lorem ipsum doquuntur aliquid autem deleniti hic est.
+                </div>
+              </div>
+              <div class="artwork artwork--3">
+                <span>
+                  <a href="#">
+                    <object
+                      data="../static/img/Cryptix.svg"
+                      style="height: 100%"
+                    ></object>
+                  </a>
+                </span>
+                <div class="artwork__content">
+                  Lorem ipsum doquuntur aliquid autem deleniti hic est.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="philosophy">
@@ -659,7 +822,7 @@
                 d="M16.9 42.47c5.3 0 9.48 1.53 12.54 4.58 3.21 2.9 4.82 6.84 4.82 11.83 0 4.82-1.6 8.76-4.82 11.82-3.06 2.9-7.24 4.34-12.55 4.34-5.15 0-9.25-1.45-12.3-4.34C1.52 67.8 0 63.94 0 59.12v-1.93C.32 50.27 6.35 31.2 18.1 0h15.92v1.45L8.2 43.19l1.21.48v.25c2.1-.97 4.58-1.45 7.48-1.45zM61.04 0H77.2v1.45L51.4 43.19l.96.48v.25a18.8 18.8 0 017.48-1.45c5.3 0 9.5 1.53 12.55 4.58 3.22 2.9 4.82 6.84 4.82 11.83 0 4.82-1.6 8.76-4.82 11.82-3.06 2.9-7.24 4.34-12.55 4.34-5.15 0-9.25-1.45-12.3-4.34-2.9-2.9-4.35-6.76-4.35-11.58v-1.93C43.51 50.27 49.47 31.2 61.05 0z"
               ></path>
             </svg>
-            a creative mind knows how to do the right thing at the right place
+            A creative mind knows how to do the right thing at the right place
             and at the right
             <span class="philosophy__underlined"
               >time
@@ -680,11 +843,28 @@
             </span>
           </h3>
         </div>
-
         <div class="skills">
           <div class="skills__help">
             <div class="decor">
-              <i class="ph-arrow-fat-right-bold right"></i>
+              <svg
+                class="o-ui-arrow"
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.10162 3.10156L62.9999 62.9999"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M63 1.00001L63 63L0.999989 63"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
             </div>
             <div class="skills__help--text">
               <div class="skills__help--text--header">
@@ -709,71 +889,32 @@
                 / figma / git
               </div>
             </div>
-            <div class="decor-right">
-              <i class="ph-arrow-fat-left-bold left"></i>
-            </div>
-          </div>
-        </div>
-        <div class="archive">
-          <div class="archive__header">
-            <h2 class="archive__header--heading">
-              Figma<br />
-              Artworks . .
-            </h2>
-            <div class="archive__header--design">
-              <object
-                data="../static/img/wave3.1.svg"
-                style="height: 100%"
-              ></object>
-              <div class="blind"></div>
-            </div>
-          </div>
-          <div class="archive__content">
-            <div class="artworks">
-              <div class="artwork artwork--1">
-                <a href="">
-                  <object
-                    data="../static/img/WASS.svg"
-                    style="height: 100%"
-                  ></object>
-                  <div class="blind"></div>
-                </a>
-                <div class="artwork__content">
-                  Lorem ipsum doquuntur aliquid autem deleniti hic est.
-                </div>
-              </div>
-              <div class="artwork artwork--2">
-                <a href="">
-                  <object
-                    data="../static/img/Cryptix.svg"
-                    style="height: 100%"
-                  ></object>
-                  <div class="blind"></div>
-                </a>
-                <div class="artwork__content">
-                  Lorem ipsum doquuntur a qindoqwndoqn liquid autem deleniti hic
-                  est.
-                </div>
-              </div>
-              <div class="artwork artwork--3">
-                <a href="">
-                  <object
-                    data="../static/img/BMW.svg"
-                    style="height: 100%"
-                  ></object>
-                  <div class="blind"></div>
-                </a>
-                <div class="artwork__content">
-                  Lorem ipsum doquuntur a qindoqwndoqn liquid autem deleniti hic
-                  est.
-                </div>
-              </div>
+            <div class="decor">
+              <svg
+                class="o-ui-arrow left"
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.10162 3.10156L62.9999 62.9999"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M63 1.00001L63 63L0.999989 63"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
             </div>
           </div>
         </div>
         <div class="footer">
           <div class="footer__header">
-            Interested in finding more ?
+            Want to know more?
             <div class="footer__header--btn interactable" data-type="link">
               <span>Let's talk</span>
               <i class="ph-arrow-down-right-bold"></i>
@@ -781,14 +922,14 @@
           </div>
           <div class="footer__design">
             <object
-              data="../static/img/wave3.3.svg"
+              data="../static/img/wave3.2.svg"
               style="height: 100%"
             ></object>
           </div>
         </div>
         <div class="end">
           <div class="end__content--left">
-            <div class="end__content--left--header">Keep In Touch .</div>
+            <div class="end__content--left--header">Keep In Touch</div>
             <div class="end__content--left--content">
               Thanks for visiting the site. Hope you liked it, if you have any
               suggestions, feel free to inform me. Your valueable suggestions
@@ -853,16 +994,18 @@
               <div class="copyright__content--content">
                 <ul>
                   <li>
+                    <a href="#" class="interactable" data-type="link"
+                      >django,</a
+                    >
+                  </li>
+                  <li>
                     <a href="#" class="interactable" data-type="link">html,</a>
                   </li>
                   <li>
                     <a href="#" class="interactable" data-type="link">scss,</a>
                   </li>
                   <li>
-                    <a href="#" class="interactable" data-type="link">js,</a>
-                  </li>
-                  <li>
-                    <a href="#" class="interactable" data-type="link">django</a>
+                    <a href="#" class="interactable" data-type="link">js</a>
                   </li>
                 </ul>
               </div>
@@ -873,12 +1016,12 @@
                 <ul class="fonts">
                   <li>
                     <a href="#" class="interactable" data-type="link"
-                      >Giselle,</a
+                      >Oggitalic,</a
                     >
                   </li>
                   <li>
                     <a href="#" class="interactable" data-type="link"
-                      >Roxoborough,</a
+                      >Giselle,</a
                     >
                   </li>
                   <li>

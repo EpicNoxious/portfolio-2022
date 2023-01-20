@@ -1,8 +1,8 @@
 // FANCY INTRO
-const slide = gsap.timeline({ defaults: { ease: "power1.out" } });
-slide.to(".text", { y: "0%", duration: 0.75, stagger: 0 });
-slide.to(".slider", { y: "-100%", duration: 1.5 }, "+=1.5");
-slide.to(".fancyintro", { y: "-100%", duration: 1 }, "-=0.85");
+// const slide = gsap.timeline({ defaults: { ease: "power1.out" } });
+// slide.to(".text", { y: "0%", duration: 0.75, stagger: 0 });
+// slide.to(".slider", { y: "-100%", duration: 1.5 }, "+=1.5");
+// slide.to(".fancyintro", { y: "-100%", duration: 1 }, "-=0.85");
 
 window.onbeforeunload = function () {
   document.documentElement.scrollTo({ top: 0 });
@@ -16,7 +16,7 @@ const animateTrailer = (e, interacting) => {
     y = e.clientY - trailer.offsetHeight / 2;
 
   const keyframes = {
-    transform: `translate(${x}px, ${y}px) scale(${interacting ? 3 : 0.8})`,
+    transform: `translate(${x}px, ${y}px) scale(${interacting ? 3 : 1})`,
   };
 
   trailer.animate(keyframes, {
@@ -24,14 +24,14 @@ const animateTrailer = (e, interacting) => {
     fill: "forwards",
   });
 };
-const getTrailerClass = (type) => {
-  switch (type) {
-    case "video":
-      return "ph-play-bold";
-    default:
-      return "ph-arrow-up-right-bold";
-  }
-};
+// const getTrailerClass = (type) => {
+//   switch (type) {
+//     case "video":
+//       return "ph-play-bold";
+//     default:
+//       return "ph-arrow-up-right-bold";
+//   }
+// };
 window.onmousemove = (e) => {
   const interactable = e.target.closest(".interactable"),
     interacting = interactable !== null;

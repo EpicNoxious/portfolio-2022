@@ -89,8 +89,12 @@ body {
 
     & .section-container .hero .heading .overflow .hero__heading {
       transform: translateY(0);
-      transition: transform 500ms ease 1000ms;
+      transition: transform 500ms ease calc(1000ms + var(--order) * 150ms);
     }
+    // & .section-container .hero .heading .overflow .hero__heading {
+    //   transform: translateY(0);
+    //   transition: transform 500ms ease 1000ms;
+    // }
   }
 
   // WHEN FIRST SECTION IS FOCUSED

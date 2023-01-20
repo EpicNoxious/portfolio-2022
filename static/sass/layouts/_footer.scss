@@ -19,11 +19,10 @@
     width: 100%;
     transform: translate(0%, -50%);
     color: $text-grey;
-    font-size: calc(3.8vw + 12px);
-    letter-spacing: 1px;
-    font-weight: 1000;
+    font-size: calc(4.8vw + 12px);
     font-family: "Giselle", serif;
-    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 100;
     &--btn {
       display: flex;
       align-items: center;
@@ -33,6 +32,7 @@
       color: var(--sec-accent);
       padding: calc(0.1vw + 8px) calc(0.4vw + 8px);
       border-radius: 10000px;
+      font-weight: 1000;
       font-size: calc(1.6vw + 12px);
       box-shadow: 6px 6px 0 0 var(--sec-accent);
       @include mini {

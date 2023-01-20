@@ -18,41 +18,48 @@
     url("../font/FHGiselle-Light.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: "Roxborough";
-  src: url("RoxboroughCF-Light.eot");
-  src: local("RoxboroughCF-Light"), local("RoxboroughCF-Light"),
-    url("../font/RoxboroughCF-Light.eot?#iefix") format("embedded-opentype"),
-    url("../font/RoxboroughCF-Light.woff2") format("woff2"),
-    url("../font/RoxboroughCF-Light.woff") format("woff"),
-    url("../font/RoxboroughCF-Light.ttf") format("truetype");
-}
+// @font-face {
+//   font-family: "Roxborough";
+//   src: url("RoxboroughCF-Light.eot");
+//   src: local("RoxboroughCF-Light"), local("RoxboroughCF-Light"),
+//     url("../font/RoxboroughCF-Light.eot?#iefix") format("embedded-opentype"),
+//     url("../font/RoxboroughCF-Light.woff2") format("woff2"),
+//     url("../font/RoxboroughCF-Light.woff") format("woff"),
+//     url("../font/RoxboroughCF-Light.ttf") format("truetype");
+// }
 
-@font-face {
-  font-family: "Roxborough-B";
-  src: local("RoxboroughCF-Bold"), local("RoxboroughCF-Bold"),
-    url("../font/RoxboroughCF-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../font/RoxboroughCF-Bold.woff2") format("woff2"),
-    url("../font/RoxboroughCF-Bold.woff") format("woff");
-}
+// @font-face {
+//   font-family: "Roxborough-B";
+//   src: local("RoxboroughCF-Bold"), local("RoxboroughCF-Bold"),
+//     url("../font/RoxboroughCF-Bold.eot?#iefix") format("embedded-opentype"),
+//     url("../font/RoxboroughCF-Bold.woff2") format("woff2"),
+//     url("../font/RoxboroughCF-Bold.woff") format("woff");
+// }
+// @font-face {
+//   font-family: "Roxborough-R";
+//   src: local("RoxboroughCF-Bold"), local("RoxboroughCF-Bold"),
+//     url("../font/RoxboroughCF-Bold.eot?#iefix") format("embedded-opentype"),
+//     url("../font/RoxboroughCF-Bold.woff2") format("woff2"),
+//     url("../font/RoxboroughCF-Bold.woff") format("woff");
+// }
 
-@font-face {
-  font-family: "Roxborough-BI";
-  src: local("RoxboroughCF-BoldItalic"), local("RoxboroughCF-BoldItalic"),
-    url("../font/RoxboroughCF-BoldItalic.eot?#iefix")
-      format("embedded-opentype"),
-    url("../font/RoxboroughCF-BoldItalic.woff2") format("woff2"),
-    url("../font/RoxboroughCF-BoldItalic.woff") format("woff");
-}
-@font-face {
-  font-family: "Roxborough-EBI";
-  src: local("RoxboroughCF-ExtraBoldItalic"),
-    local("RoxboroughCF-ExtraBoldItalic"),
-    url("../font/RoxboroughCF-ExtraBoldItalic.eot?#iefix")
-      format("embedded-opentype"),
-    url("../font/RoxboroughCF-ExtraBoldItalic.woff2") format("woff2"),
-    url("../font/RoxboroughCF-ExtraBoldItalic.woff") format("woff");
-}
+// @font-face {
+//   font-family: "Roxborough-BI";
+//   src: local("RoxboroughCF-BoldItalic"), local("RoxboroughCF-BoldItalic"),
+//     url("../font/RoxboroughCF-BoldItalic.eot?#iefix")
+//       format("embedded-opentype"),
+//     url("../font/RoxboroughCF-BoldItalic.woff2") format("woff2"),
+//     url("../font/RoxboroughCF-BoldItalic.woff") format("woff");
+// }
+// @font-face {
+//   font-family: "Roxborough-EBI";
+//   src: local("RoxboroughCF-ExtraBoldItalic"),
+//     local("RoxboroughCF-ExtraBoldItalic"),
+//     url("../font/RoxboroughCF-ExtraBoldItalic.eot?#iefix")
+//       format("embedded-opentype"),
+//     url("../font/RoxboroughCF-ExtraBoldItalic.woff2") format("woff2"),
+//     url("../font/RoxboroughCF-ExtraBoldItalic.woff") format("woff");
+// }
 
 @font-face {
   font-family: "Gilroy-B";
@@ -77,4 +84,35 @@
 @font-face {
   font-family: "Gilroy-T";
   src: local("Gilroy"), url("../font/Gilroy-Thin.ttf") format("truetype");
+}
+
+// Roxborough Font
+@font-face {
+  font-family: "Roxborough-EBI";
+  src: url("../font/RoxboroughCF-ExtraBoldItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Roxborough-BI";
+  src: url("../font/RoxboroughCF-BoldItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Roxborough-RI";
+  src: url("../font/RoxboroughCF-ExtraBoldItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Roxborough-MI";
+  src: url("../font/RoxboroughCF-MediumItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Roxborough-RI";
+  src: url("../font/RoxboroughCF-RegularItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Roxborough-TI";
+  src: url("../font/RoxboroughCF-ThinItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Oggitalic";
+  src: url("../font/FontsFree-Net-Ogg-Italic.ttf") format("truetype");
 }

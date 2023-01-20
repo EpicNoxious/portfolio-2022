@@ -1,5 +1,5 @@
 h1 {
-  font-size: calc(11.2vw + 12px);
+  font-size: calc(10.4vw + 12px);
   font-weight: 100;
   font-family: "Giselle", sans-serif;
   @include mini {
@@ -14,9 +14,16 @@ h2 {
   letter-spacing: 0.5px;
 }
 h3 {
-  font-size: calc(2.4vw + 12px);
+  font-size: calc(3.2vw + 12px);
   color: $text-grey;
-  font-weight: 1000;
+  font-weight: 100;
   font-family: "Giselle", sans-serif;
   letter-spacing: 1px;
+}
+
+.helper-word {
+  font-family: "Oggitalic", serif;
+  letter-spacing: 7px;
+  font-weight: 100;
+  text-transform: lowercase;
 }

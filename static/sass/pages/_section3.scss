@@ -1,12 +1,12 @@
 .philosophy {
-  margin-top: calc(12vw + 48px);
+  margin-top: calc(24vw + 48px);
   color: $text-grey;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 
   &__text {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
-    text-align: left;
+    text-align: justify;
     position: relative;
   }
   &__quote {
@@ -38,8 +38,10 @@
 
 .skills,
 .tech {
+  width: 90%;
+  margin: 0 auto;
   &__help {
-    margin-top: calc(12vw + 48px);
+    margin-top: calc(24vw + 48px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -66,12 +68,6 @@
     }
   }
 }
-.tech__help--text {
-  margin-left: 7%;
-}
-.skills__help--text--content {
-  margin-right: 7%;
-}
 
 .archive {
   margin-top: calc(12vw + 48px);
@@ -79,15 +75,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     gap: 2.4vw;
     &--heading {
-      flex: 35%;
+      flex: 50%;
       color: $text-grey;
       text-transform: capitalize;
-      font-size: calc(3.8vw + 12px);
+      font-size: calc(4.8vw + 12px);
       font-family: "Giselle", sans-serif;
-      font-weight: 1000;
+      font-weight: 100;
       letter-spacing: 1px;
       text-align: right;
     }
@@ -121,37 +116,56 @@
   }
 
   .artworks {
+    object {
+      width: 80%;
+    }
     .artwork {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       margin-bottom: calc(12vw + 48px);
+      gap: calc(4.8vw + 12px);
       &--1 {
         a {
+          filter: saturate(0);
           order: 1;
           position: relative;
           z-index: -1;
+          transition: all 0.3s ease-in-out;
+        }
+        span:hover a {
+          filter: saturate(1);
         }
       }
       &--2 {
+        span {
+          order: 1;
+        }
         a {
-          order: -1;
+          filter: saturate(0);
           position: relative;
           z-index: -1;
+          transition: all 0.3s ease-in-out;
+        }
+        span:hover a {
+          filter: saturate(1);
         }
       }
       &--3 {
         a {
+          filter: saturate(0);
           order: 1;
           position: relative;
           z-index: -1;
+          transition: all 0.3s ease-in-out;
+        }
+        span:hover a {
+          filter: saturate(1);
         }
       }
       &__content {
         color: $text-grey;
-      }
-      a object {
-        width: 70%;
+        flex: 100%;
       }
     }
   }
