@@ -307,6 +307,7 @@ body {
   background: #363636;
   font-family: "Gilroy-R", sans-serif;
   user-select: none;
+  scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar {
