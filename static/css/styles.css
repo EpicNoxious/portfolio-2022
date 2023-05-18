@@ -137,11 +137,11 @@ body section .section-container {
 }
 body #first {
   left: 0;
-  background: #363636;
+  background: #303030;
 }
 body #second {
   left: 80vw;
-  background: #1f1f1f;
+  background: #202020;
 }
 @media screen and (max-width: 970px) {
   body #second {
@@ -150,7 +150,7 @@ body #second {
 }
 body #third {
   left: 90vw;
-  background: #080808;
+  background: #101010;
 }
 @media screen and (max-width: 970px) {
   body #third {
@@ -304,7 +304,7 @@ body #third.third-clicked {
 html,
 body {
   overflow-x: hidden;
-  background: #363636;
+  background: #303030;
   font-family: "Gilroy-R", sans-serif;
   user-select: none;
   scroll-behavior: smooth;
@@ -378,7 +378,7 @@ html::-webkit-scrollbar {
   justify-content: space-between;
 }
 .hide span .change-color {
-  animation: switch-color 1.8s 0.2s linear forwards;
+  animation: switch-color 2s 0.75s linear forwards;
 }
 
 .slider {
@@ -644,6 +644,7 @@ body:hover > #trailer {
   color: var(--sec-accent);
   transition: all 200ms ease-in-out;
   padding: 8px 16px;
+  text-decoration: none;
 }
 
 .time,
@@ -775,6 +776,10 @@ body:hover > #trailer {
   box-shadow: 6px 6px 0 0 var(--sec-accent);
   transition: all 200ms ease-in-out;
 }
+.footer__header--btn a {
+  color: var(--sec-accent);
+  text-decoration: none;
+}
 @media screen and (max-width: 970px) {
   .footer__header--btn {
     font-size: calc(0.8vw + 8px);
@@ -804,6 +809,16 @@ body:hover > #trailer {
   justify-content: center;
   border-radius: 10000px;
   overflow: hidden;
+}
+@media screen and (max-width: 600px) {
+  .footer__design {
+    min-height: 25vw;
+  }
+}
+@media screen and (max-width: 360px) {
+  .footer__design {
+    min-height: 30vw;
+  }
 }
 
 .hero {
@@ -883,6 +898,31 @@ body:hover > #trailer {
   font-weight: 400;
   letter-spacing: 0.5px;
   gap: 5%;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 768px) {
+  .intro__text {
+    flex-direction: column;
+    gap: 2vw;
+    width: 100%;
+  }
+  .intro__text p:nth-of-type(odd) {
+    padding-right: 50%;
+  }
+  .intro__text p:nth-of-type(even) {
+    padding-left: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .intro__text {
+    gap: 4vw;
+  }
+  .intro__text p:nth-of-type(odd) {
+    padding-right: 30%;
+  }
+  .intro__text p:nth-of-type(even) {
+    padding-left: 30%;
+  }
 }
 .intro__text--keyword {
   font-family: "Oggitalic", serif;
@@ -1005,7 +1045,7 @@ body:hover > #trailer {
 }
 .about__content--para {
   color: #c3c3c3;
-  text-align: left;
+  text-align: justify;
 }
 .about__content--para:not(:last-child) {
   margin-bottom: calc(0.4vw + 12px);
@@ -1111,9 +1151,10 @@ body:hover > #trailer {
     font-size: calc(0.4vw + 8px);
   }
 }
-.end__content--right--listitem span {
+.end__content--right--listitem a {
   display: flex;
   align-items: center;
+  color: var(--sec-accent);
   justify-content: center;
   gap: 0.4vw;
   background-color: #efefef;
@@ -1121,25 +1162,26 @@ body:hover > #trailer {
   border-radius: 10000px;
   box-shadow: 3px 3px 0 0 var(--sec-accent);
   transition: all 200ms ease-in-out;
+  text-decoration: none;
 }
 @media screen and (max-width: 970px) {
-  .end__content--right--listitem span {
+  .end__content--right--listitem a {
     box-shadow: 2px 2px 0 0 var(--sec-accent);
   }
 }
-.end__content--right--listitem span i {
+.end__content--right--listitem a i {
   transition: all 200ms ease-in-out;
 }
-.end__content--right--listitem span:hover {
+.end__content--right--listitem a:hover {
   box-shadow: 0px 0px 0 0 var(--sec-accent);
   transform: translate(3px, 3px);
 }
 @media screen and (max-width: 970px) {
-  .end__content--right--listitem span:hover {
+  .end__content--right--listitem a:hover {
     transform: translate(2px, 2px);
   }
 }
-.end__content--right--listitem span:hover i {
+.end__content--right--listitem a:hover i {
   transform: rotate(-45deg);
 }
 .end__content--right--listborder {

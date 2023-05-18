@@ -7,10 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jappreet Singh &mdash; Developer</title>
 
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <!-- <link rel="stylesheet" href="{% static 'css/styles.css' %}" /> -->
     <link rel="stylesheet" href="../static/css/styles.css" />
     <link rel="icon" type="image/x-icon" href="../static/img/favicon.png" />
 
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+      integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer type="module" src="../static/js/app.js"></script>
     <script src="https://unpkg.com/phosphor-icons"></script>
   </head>
   <body>
@@ -116,12 +125,6 @@
           </div>
         </header>
         <div class="intro">
-          <!-- <h2 class="intro__text">
-            I'm Jappreet Singh,<br />I build
-            <span class="intro__text--keyword">unconventional </span>yet
-            functional & visually pleasing interfaces for the mobile and web.
-          </h2> -->
-
           <div class="intro__header">
             <h2 class="intro__header--heading">
               Who A<span class="helper-word" style="color: var(--sec-accent)"
@@ -275,7 +278,7 @@
           <div class="footer__header">
             Want to know more?
             <div class="footer__header--btn interactable" data-type="link">
-              <span>Let's talk</span>
+              <a href="mailto:jappreet16042002@gmail.com">Let's talk</a>
               <i class="ph-arrow-down-right-bold"></i>
             </div>
           </div>
@@ -302,37 +305,53 @@
                 class="end__content--right--listitem interactable"
                 data-type="link"
               >
-                <span> Instagram <i class="ph-arrow-down-right-bold"></i></span>
+                <a href="https://www.instagram.com/jappreet.singh_/">
+                  Instagram <i class="ph-arrow-down-right-bold"></i
+                ></a>
               </li>
               <li
                 class="end__content--right--listitem interactable"
                 data-type="link"
               >
-                <span> Linkedin <i class="ph-arrow-down-right-bold"></i></span>
+                <a href="https://www.linkedin.com/in/jappreet-singh-6362071a0/">
+                  Linkedin <i class="ph-arrow-down-right-bold"></i
+                ></a>
               </li>
               <li
                 class="end__content--right--listitem interactable"
                 data-type="link"
               >
-                <span> Facebook <i class="ph-arrow-down-right-bold"></i></span>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100009508664212"
+                >
+                  Facebook <i class="ph-arrow-down-right-bold"></i
+                ></a>
               </li>
               <li
                 class="end__content--right--listitem interactable"
                 data-type="link"
               >
-                <span> Github <i class="ph-arrow-down-right-bold"></i></span>
+                <a href="https://github.com/epicnoxious">
+                  Github <i class="ph-arrow-down-right-bold"></i
+                ></a>
               </li>
               <li
                 class="end__content--right--listitem interactable"
                 data-type="link"
               >
-                <span> Twitter <i class="ph-arrow-down-right-bold"></i></span>
+                <a href="https://twitter.com/JappreetSingh9">
+                  Twitter <i class="ph-arrow-down-right-bold"></i
+                ></a>
               </li>
               <li
                 class="end__content--right--listitem interactable"
                 data-type="link"
               >
-                <span> Resume <i class="ph-arrow-down-right-bold"></i></span>
+                <a
+                  href="https://drive.google.com/file/d/1UJMWct7jKVEYGnCZ9cY-20nBky8T0JW3/view?usp=sharing"
+                >
+                  Resume <i class="ph-arrow-down-right-bold"></i
+                ></a>
               </li>
             </ul>
           </div>
@@ -522,46 +541,57 @@
             <!-- 1st Project -->
             <div class="project__tags">
               <ul class="project__tags--list">
-                <li class="project__tags--listitem">Flask</li>
-                <li class="project__tags--listitem">SCSS</li>
-                <li class="project__tags--listitem">JavaScript</li>
+                <li class="project__tags--listitem">GSAP</li>
+                <li class="project__tags--listitem">Pug & SCSS</li>
+                <li class="project__tags--listitem">JS</li>
+                <li class="project__tags--listitem">Django</li>
                 <li class="project__tags--listitem">Figma</li>
               </ul>
               <div class="project__copyright">№ &mdash; /001</div>
             </div>
-            <a class="project__link interactable" href="#" data-type="link">
+            <a
+              class="project__link interactable"
+              href="https://algocs-sample.netlify.app/"
+              data-type="link"
+            >
               <div class="project project--1">
-                <div class="project__header">Brew Nation</div>
+                <div class="project__header">Algocs</div>
               </div>
             </a>
 
             <!-- 2nd Project -->
             <div class="project__tags">
               <ul class="project__tags--list">
-                <li class="project__tags--listitem">Flask</li>
-                <li class="project__tags--listitem">JavaScript</li>
+                <li class="project__tags--listitem">Django</li>
+                <li class="project__tags--listitem">React</li>
+                <li class="project__tags--listitem">Swup Js</li>
+                <li class="project__tags--listitem">Pug & SCSS</li>
+                <li class="project__tags--listitem">Figma</li>
               </ul>
               <div class="project__copyright">№ &mdash; /002</div>
             </div>
             <a class="project__link interactable" href="#" data-type="link">
               <div class="project project--2">
-                <div class="project__header">Blog Web-App</div>
+                <div class="project__header">Wordle</div>
               </div>
             </a>
 
             <!-- 3rd Project -->
             <div class="project__tags">
               <ul class="project__tags--list">
-                <li class="project__tags--listitem">Django</li>
+                <li class="project__tags--listitem">Flask</li>
                 <li class="project__tags--listitem">JavaScript</li>
-                <li class="project__tags--listitem">SCSS</li>
-                <li class="project__tags--listitem">Figma</li>
+                <li class="project__tags--listitem">HTML & SCSS</li>
               </ul>
               <div class="project__copyright">№ &mdash; /003</div>
             </div>
-            <a class="project__link interactable" href="#" data-type="link">
+            <a
+              class="project__link interactable"
+              href="https://brewnation.vercel.app/"
+              data-type="link"
+            >
               <div class="project project--3">
-                <div class="project__header">Devsearch</div>
+                <div class="project__header">Brew Nation</div>
               </div>
             </a>
           </div>
@@ -570,7 +600,7 @@
           <div class="footer__header">
             Want to know more?
             <div class="footer__header--btn interactable" data-type="link">
-              <span>Let's talk</span>
+              <a href="mailto:jappreet16042002@gmail.com">Let's talk</a>
               <i class="ph-arrow-down-right-bold"></i>
             </div>
           </div>
@@ -596,37 +626,53 @@
                 class="end__content--right--listitem interactable"
                 data-type="link"
               >
-                <span> Instagram <i class="ph-arrow-down-right-bold"></i></span>
+                <a href="https://www.instagram.com/jappreet.singh_/">
+                  Instagram <i class="ph-arrow-down-right-bold"></i
+                ></a>
               </li>
               <li
                 class="end__content--right--listitem interactable"
                 data-type="link"
               >
-                <span> Linkedin <i class="ph-arrow-down-right-bold"></i></span>
+                <a href="https://www.linkedin.com/in/jappreet-singh-6362071a0/">
+                  Linkedin <i class="ph-arrow-down-right-bold"></i
+                ></a>
               </li>
               <li
                 class="end__content--right--listitem interactable"
                 data-type="link"
               >
-                <span> Facebook <i class="ph-arrow-down-right-bold"></i></span>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100009508664212"
+                >
+                  Facebook <i class="ph-arrow-down-right-bold"></i
+                ></a>
               </li>
               <li
                 class="end__content--right--listitem interactable"
                 data-type="link"
               >
-                <span> Github <i class="ph-arrow-down-right-bold"></i></span>
+                <a href="https://github.com/epicnoxious">
+                  Github <i class="ph-arrow-down-right-bold"></i
+                ></a>
               </li>
               <li
                 class="end__content--right--listitem interactable"
                 data-type="link"
               >
-                <span> Twitter <i class="ph-arrow-down-right-bold"></i></span>
+                <a href="https://twitter.com/JappreetSingh9">
+                  Twitter <i class="ph-arrow-down-right-bold"></i
+                ></a>
               </li>
               <li
                 class="end__content--right--listitem interactable"
                 data-type="link"
               >
-                <span> Resume <i class="ph-arrow-down-right-bold"></i></span>
+                <a
+                  href="https://drive.google.com/file/d/1UJMWct7jKVEYGnCZ9cY-20nBky8T0JW3/view?usp=sharing"
+                >
+                  Resume <i class="ph-arrow-down-right-bold"></i
+                ></a>
               </li>
             </ul>
           </div>
@@ -824,9 +870,7 @@
                     ></object>
                   </a>
                 </span>
-                <div class="artwork__content">
-                  Lorem ipsum doquuntur aliquid autem deleniti hic est.
-                </div>
+                <div class="artwork__content">Figma Design for WASS</div>
               </div>
               <div class="artwork artwork--2">
                 <span>
@@ -837,9 +881,7 @@
                     ></object>
                   </a>
                 </span>
-                <div class="artwork__content">
-                  Lorem ipsum doquuntur aliquid autem deleniti hic est.
-                </div>
+                <div class="artwork__content">Figma Design for BMW</div>
               </div>
               <div class="artwork artwork--3">
                 <span>
@@ -850,9 +892,7 @@
                     ></object>
                   </a>
                 </span>
-                <div class="artwork__content">
-                  Lorem ipsum doquuntur aliquid autem deleniti hic est.
-                </div>
+                <div class="artwork__content">Figma Design for Cryptix</div>
               </div>
             </div>
           </div>
@@ -959,7 +999,7 @@
           <div class="footer__header">
             Want to know more?
             <div class="footer__header--btn interactable" data-type="link">
-              <span>Let's talk</span>
+              <a href="mailto:jappreet16042002@gmail.com">Let's talk</a>
               <i class="ph-arrow-down-right-bold"></i>
             </div>
           </div>
@@ -985,37 +1025,53 @@
                 class="end__content--right--listitem interactable"
                 data-type="link"
               >
-                <span> Instagram <i class="ph-arrow-down-right-bold"></i></span>
+                <a href="https://www.instagram.com/jappreet.singh_/">
+                  Instagram <i class="ph-arrow-down-right-bold"></i
+                ></a>
               </li>
               <li
                 class="end__content--right--listitem interactable"
                 data-type="link"
               >
-                <span> Linkedin <i class="ph-arrow-down-right-bold"></i></span>
+                <a href="https://www.linkedin.com/in/jappreet-singh-6362071a0/">
+                  Linkedin <i class="ph-arrow-down-right-bold"></i
+                ></a>
               </li>
               <li
                 class="end__content--right--listitem interactable"
                 data-type="link"
               >
-                <span> Facebook <i class="ph-arrow-down-right-bold"></i></span>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100009508664212"
+                >
+                  Facebook <i class="ph-arrow-down-right-bold"></i
+                ></a>
               </li>
               <li
                 class="end__content--right--listitem interactable"
                 data-type="link"
               >
-                <span> Github <i class="ph-arrow-down-right-bold"></i></span>
+                <a href="https://github.com/epicnoxious">
+                  Github <i class="ph-arrow-down-right-bold"></i
+                ></a>
               </li>
               <li
                 class="end__content--right--listitem interactable"
                 data-type="link"
               >
-                <span> Twitter <i class="ph-arrow-down-right-bold"></i></span>
+                <a href="https://twitter.com/JappreetSingh9">
+                  Twitter <i class="ph-arrow-down-right-bold"></i
+                ></a>
               </li>
               <li
                 class="end__content--right--listitem interactable"
                 data-type="link"
               >
-                <span> Resume <i class="ph-arrow-down-right-bold"></i></span>
+                <a
+                  href="https://drive.google.com/file/d/1UJMWct7jKVEYGnCZ9cY-20nBky8T0JW3/view?usp=sharing"
+                >
+                  Resume <i class="ph-arrow-down-right-bold"></i
+                ></a>
               </li>
             </ul>
           </div>
@@ -1122,16 +1178,9 @@
       </div>
     </section>
     <div class="portfolio interactable" data-type="link">
-      <span class="portfolio__name">Jappreet S. </span>
+      <a href="#" class="portfolio__name">Jappreet S.</a>
     </div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
-      integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
 
-    <script type="module" src="../static/js/app.js"></script>
     <script>
       function addZero(i) {
         if (i < 10) {

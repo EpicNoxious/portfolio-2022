@@ -35,6 +35,10 @@
       font-weight: 1000;
       font-size: calc(1.6vw + 12px);
       box-shadow: 6px 6px 0 0 var(--sec-accent);
+      a {
+        color: var(--sec-accent);
+        text-decoration: none;
+      }
       @include mini {
         font-size: calc(0.8vw + 8px);
         box-shadow: 4px 4px 0 0 var(--sec-accent);
@@ -61,6 +65,12 @@
   &__design {
     height: 100%;
     min-height: 15vw;
+    @include phone {
+      min-height: 25vw;
+    }
+    @include phoneS {
+      min-height: 30vw;
+    }
     display: flex;
     align-items: flex-end;
     justify-content: center;

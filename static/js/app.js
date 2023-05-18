@@ -1,8 +1,21 @@
 // FANCY INTRO
-const slide = gsap.timeline({ defaults: { ease: "power1.out" } });
-slide.to(".text", { y: "0%", duration: 0.75, stagger: 0 });
-slide.to(".slider", { y: "-100%", duration: 1.5 }, "+=1.5");
-slide.to(".fancyintro", { y: "-100%", duration: 1 }, "-=0.85");
+const slide = gsap.timeline({ defaults: { ease: "power4.inOut" } });
+
+slide.to(".text", {
+  y: "0%",
+  duration: 1.2,
+  stagger: 0.1,
+});
+slide.to(".slider", {
+  y: "-100%",
+  duration: 1.5,
+  delay: 2.1,
+});
+slide.to(".fancyintro", {
+  y: "-100%",
+  duration: 1,
+  delay: -1.1,
+});
 
 window.onbeforeunload = function () {
   document.documentElement.scrollTo({ top: 0 });
@@ -24,14 +37,7 @@ const animateTrailer = (e, interacting) => {
     fill: "forwards",
   });
 };
-// const getTrailerClass = (type) => {
-//   switch (type) {
-//     case "video":
-//       return "ph-play-bold";
-//     default:
-//       return "ph-arrow-up-right-bold";
-//   }
-// };
+
 window.onmousemove = (e) => {
   const interactable = e.target.closest(".interactable"),
     interacting = interactable !== null;

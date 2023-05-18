@@ -90,7 +90,7 @@ html::-webkit-scrollbar {
     display: flex;
     justify-content: space-between;
     .change-color {
-      animation: switch-color 1.8s 0.2s linear forwards;
+      animation: switch-color 2s 0.75s linear forwards;
     }
   }
 }

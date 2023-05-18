@@ -41,6 +41,27 @@
     font-weight: 400;
     letter-spacing: 0.5px;
     gap: 5%;
+    overflow-x: hidden;
+    @include tablet {
+      flex-direction: column;
+      gap: 2vw;
+      width: 100%;
+      & p:nth-of-type(odd) {
+        padding-right: 50%;
+      }
+      & p:nth-of-type(even) {
+        padding-left: 50%;
+      }
+    }
+    @include phone {
+      gap: 4vw;
+      & p:nth-of-type(odd) {
+        padding-right: 30%;
+      }
+      & p:nth-of-type(even) {
+        padding-left: 30%;
+      }
+    }
     &--keyword {
       font-family: "Oggitalic", serif;
       font-weight: 1000;
@@ -176,7 +197,7 @@
     letter-spacing: 0.5px;
     &--para {
       color: $text-background-grey;
-      text-align: left;
+      text-align: justify;
       &:not(:last-child) {
         margin-bottom: calc(0.4vw + 12px);
       }
@@ -276,9 +297,10 @@
           @include mini {
             font-size: calc(0.4vw + 8px);
           }
-          span {
+          a {
             display: flex;
             align-items: center;
+            color: var(--sec-accent);
             justify-content: center;
             gap: 0.4vw;
             background-color: $text-grey;
@@ -286,6 +308,7 @@
             border-radius: 10000px;
             box-shadow: 3px 3px 0 0 var(--sec-accent);
             transition: all 200ms ease-in-out;
+            text-decoration: none;
             @include mini {
               box-shadow: 2px 2px 0 0 var(--sec-accent);
             }
